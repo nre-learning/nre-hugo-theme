@@ -1,0 +1,14 @@
+{
+  "name": "nre-hugo-theme",
+  "version": "0.0.1",
+  "description": "A Hugo theme for the NRE Blog website.",
+  "main": "index.js",
+  "scripts": {
+    "build-scripts": "node build/scripts.js"
+  },
+  "author": "Nils Lundquist",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.10.3"
+  }
+}
