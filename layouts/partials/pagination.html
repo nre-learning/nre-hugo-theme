@@ -3,7 +3,7 @@
 {{ if gt $pag.TotalPages 1 }}
 <div class="basic-paginator">
   {{if $pag.HasPrev }}<a href="{{ $pag.Prev.URL }}">{{ end }}
-  <button class="btn secondary {{ if (not $pag.HasPrev) }}disabled{{ end }}">
+  <button class="btn support {{ if (not $pag.HasPrev) }}disabled{{ end }}">
     Previous
   </button>
   {{if $pag.HasPrev}}</a>{{ end }}
@@ -14,7 +14,7 @@
   </span>
 
   {{if $pag.HasNext }}<a href="{{ $pag.Next.URL}}">{{ end }}
-  <button class="btn secondary {{ if (not $pag.HasNext) }}disabled{{ end }}">
+  <button class="btn support {{ if (not $pag.HasNext) }}disabled{{ end }}">
     Next
   </button>
   {{if $pag.HasNext }}</a>{{ end }}
