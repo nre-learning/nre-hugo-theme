@@ -31,7 +31,6 @@ containers.forEach(async (container) => {
     container.dataset.count
   );
   container.classList.remove('loading');
-  // todo: fix this
   container.removeChild(container.querySelector('.spinner'));
 });
 
@@ -58,11 +57,13 @@ const navSlide = () => {
   const nav = document.querySelector('.burger-nav');
   const body = document.querySelector('body');
 
-  burger.addEventListener('click', () => {
+  if (burger) {
+    burger.addEventListener('click', () => {
       nav.classList.toggle('active'); // open menu
       body.classList.toggle('overflow-hidden'); // freeze scrolling
       burger.classList.toggle('cross'); // toggle between burger and "X" icon
     });
+  }
 };
 
 navSlide();
