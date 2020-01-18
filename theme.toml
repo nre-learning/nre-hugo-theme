@@ -1,7 +1,7 @@
 name = "NRE Hugo Theme"
 license = "Proprietary"
 description = "The theme for building the NRE Blog static site"
-homepage = "https://github.com/nlundquist/nre-hugo-theme"
+homepage = "https://github.com/nre-learning/nre-hugo-theme"
 features = ["posts", "shortcodes", "related content", "comments"]
 min_version = 0.49
 
