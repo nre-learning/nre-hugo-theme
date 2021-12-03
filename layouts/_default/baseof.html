@@ -77,7 +77,13 @@
 </head>
 
 <body>
+
+  <div style="top: 0;left: 0;z-index: 9999;width: 100%;text-align: center;background: #ff4f4f;color: white; font-weight: bold;">
+    The NRE Labs project has shut down, and the interactive labs are no longer available. See <a href="https://nrelabs.io/2021/12/goodbye-for-now/">this blog post</a> for more information.
+  </div>
+
 {{ block "header" . }}{{ partial "header.html" .}}{{ end }}
+
 
 <div class="main {{ .Type }} {{if .IsPage }}page{{else}}index{{ end }}">
   {{ block "main" . }}{{ end }}
